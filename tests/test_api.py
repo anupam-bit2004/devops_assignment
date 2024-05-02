@@ -1,11 +1,11 @@
+
+import pytest
 import requests
-import unittest
 
-class TestAPI (unittest.TestCase):
+@pytest.fixture
+def api_url():
+  pass
 
-  def test_get_users(self):
-    response = 200
-    self.assertEqual(response, 200)
-
-if __name__ == '__main__':
-  unittest.main()
+def test_get_users(api_url):
+  response = 200
+  self.assertEqual(response, 200)
