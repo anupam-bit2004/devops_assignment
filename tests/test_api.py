@@ -7,5 +7,5 @@ def api_url():
   pass
 
 def test_get_users(api_url):
-  response = 200
-  self.assertEqual(response, 200)
+  response.status_code = 200
+  assert response.status_code == 200
