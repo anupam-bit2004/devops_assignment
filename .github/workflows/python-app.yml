@@ -37,6 +37,8 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest
+        pip install requests
+        pip install unittest
         export PYTHONPATH=src
         pytest
         python tests/test_api.py
