@@ -45,6 +45,7 @@ jobs:
       with:
           name: aws-cloudformation-template
           template: template.yaml
+          capabilities: "CAPABILITY_IAM"
           no-fail-on-empty-changeset: "1"      
     - name: Test with pytest
       run: |
